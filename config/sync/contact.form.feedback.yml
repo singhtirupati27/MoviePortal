@@ -1,0 +1,14 @@
+uuid: 6205434f-3560-409f-94dc-19f05b24ad76
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - tirupati.singh@innoraft.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
