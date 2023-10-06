@@ -1,0 +1,15 @@
+uuid: 5e150cc6-6078-462b-9490-3127d779ee53
+langcode: en
+status: true
+dependencies: {  }
+name: movie_banner_1440x640_
+label: 'Movie Banner (1440x640)'
+effects:
+  d155eb16-34b6-482e-b18d-f51fe731fc44:
+    uuid: d155eb16-34b6-482e-b18d-f51fe731fc44
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1905
+      height: 640
+      anchor: center-center
