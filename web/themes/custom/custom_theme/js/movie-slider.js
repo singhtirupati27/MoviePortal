@@ -6,12 +6,12 @@
 (function ($, Drupal, once) {
   Drupal.behaviors.sliderBehavior = {
     attach: function (context, settings) {
-      const $sliderDiv = $('.view-content');
+      const $sliderDiv = $('.movie-slider .view-content');
       once('movieSlider', $sliderDiv, context).forEach(function (element) {
         $($sliderDiv).slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: false,
+          autoplay: true,
           autoplaySpeed: 3000,
           draggable: false,
           prevArrow: '<div class="arrow-left"><i class="bi bi-chevron-left"></i></div>',

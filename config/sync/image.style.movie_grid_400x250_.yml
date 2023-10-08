@@ -1,0 +1,15 @@
+uuid: efbe76ea-89c2-45c6-b93e-14472fd69715
+langcode: en
+status: true
+dependencies: {  }
+name: movie_grid_400x250_
+label: 'Movie Grid (400x250)'
+effects:
+  dd59b574-63ab-4aea-9e60-4953a31ffbe5:
+    uuid: dd59b574-63ab-4aea-9e60-4953a31ffbe5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 250
+      anchor: center-center

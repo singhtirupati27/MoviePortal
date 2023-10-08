@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.movie.field_description
     - field.field.node.movie.field_movie_image
     - field.field.node.movie.field_release_date
-    - image.style.thumbnail
+    - image.style.movie_banner_1440x640_
     - node.type.movie
   module:
     - datetime
@@ -32,7 +32,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: movie_banner_1440x640_
       image_loading:
         attribute: lazy
     third_party_settings: {  }

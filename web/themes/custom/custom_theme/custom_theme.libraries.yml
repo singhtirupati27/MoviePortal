@@ -28,3 +28,9 @@ movie-page:
   css:
     theme:
       css/movie-page.css: {}
+
+movie-grid:
+  version: 1.x
+  css:
+    theme:
+      css/movie-grid.css: {}
