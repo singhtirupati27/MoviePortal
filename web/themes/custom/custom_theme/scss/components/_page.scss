@@ -1,0 +1,55 @@
+@use '../partial_files/importers' as *;
+
+.region.region-content {
+  padding: 0;
+
+  .block-page-title-block {
+    @include padding(0, 8px);
+    h1 {
+      span {
+        color: var(--brand-primary);
+        font-family: $title-font, sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  #block-custom-theme-content{
+    .node--type-movie {
+      .node__content {
+        .field--name-field-movie-image {
+          img {
+            min-width: 100%;
+          }
+        }
+
+        .field.field--name-field-description {
+          @include padding(0, 8px);
+          padding-top: 10px;
+          text-align: justify;
+          font-family: $medium-font, sans-serif;
+
+          p {
+            a {
+              color: var(--brand-primary);
+            }
+          }
+        }
+
+        .field.field--name-field-release-date {
+          @include padding(0, 8px);
+
+          .field__label {
+            color: var(--bg-accent-color);
+          }
+
+          .field__item {
+            font-family: $medium-font, sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

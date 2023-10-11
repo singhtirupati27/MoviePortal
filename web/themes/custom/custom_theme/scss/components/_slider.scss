@@ -1,0 +1,113 @@
+@use '../partial_files/importers' as *;
+
+.region.region-content {
+  padding: 0;
+
+  .view-id-movies.view-display-id-page_1 {
+    .view-content {
+      position: relative;
+
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        color: var(--brand-secondary-color);
+        font-size: 38px;
+        display: inline-block;
+      }
+
+      .arrow-left {
+        left: 0;
+        transform: translate(50%, -50%);
+        z-index: 10;
+      }
+
+      .arrow-right {
+        right: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      .slick-list {
+        .slick-track {
+          .views-row {
+            position: relative;
+            color: var(--brand-secondary-color);
+
+            .views-field-field-movie-image {
+              .field-content {
+                img {
+                  filter: brightness(0.6);
+                  min-width: 100%;
+                }
+              }
+            }
+
+            .views-field-title {
+              @include absolute-center(50%, 50%, -50%, -50%);
+              @include margin-center;
+              text-align: center;
+
+              .field-content {
+                a {
+                  font-size: 30px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                }
+              }
+            }
+
+            .views-field-field-release-date {
+              @include absolute-center(40%, 50%, -50%, -50%);
+              @include margin-center;
+              opacity: 0.8;
+            }
+
+            .views-field-view-node {
+              @include absolute-center(65%, 50%, -50%, -50%);
+              @include margin-center;
+
+              .field-content {
+                a {
+                  display: block;
+                  @include padding(10px, 15px);
+                  border: 1px solid var(--brand-secondary-color);
+                  text-transform: uppercase;
+                  letter-spacing: 2.3px;
+                  font-size: 14px;
+                  font-family: $title-font, sans-serif;
+
+                  &:hover {
+                    background-color: var(--brand-primary);
+                    color: var(--brand-secondary-color);
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: 0;
+
+        li {
+          button::before {
+            content: '';
+            font-size: 10px;
+            width: 20px;
+            height: 5px;
+            background-color: var(--brand-secondary-color);
+            opacity: 0.8;
+          }
+        }
+
+        .slick-active {
+          button::before {
+            background-color: var(--brand-primary);
+          }
+        }
+      }
+    }
+  }
+}

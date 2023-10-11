@@ -1,0 +1,14 @@
+@mixin padding($tb, $lr) {
+  padding: $tb $lr;
+}
+
+@mixin absolute-center($top, $left, $x, $y) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate($x, $y);
+}
+
+@mixin margin-center {
+  margin: 0 auto;
+}

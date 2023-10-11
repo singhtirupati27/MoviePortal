@@ -1,0 +1,22 @@
+@use '../partial_files/importers' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --brand-primary: #{$brand-primary};
+  --brand-secondary-color: #{$brand-secondary-color};
+  --bg-accent-color: #{$bg-accent-color};
+}
+
+html, body {
+  font-size: 16px;
+  font-family: $body-font, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brand-secondary-color);
+}
