@@ -1,0 +1,15 @@
+uuid: 2f67bedf-1085-4479-9df8-25b5c4ecea08
+langcode: en
+status: true
+dependencies: {  }
+name: grid_xl_500x150_
+label: 'Grid xl (500x150)'
+effects:
+  c59ed510-22ca-478d-990a-e51d50f6fd33:
+    uuid: c59ed510-22ca-478d-990a-e51d50f6fd33
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 300
+      anchor: center-center

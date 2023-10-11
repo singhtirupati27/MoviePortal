@@ -1,0 +1,15 @@
+uuid: e820bfee-9217-4b3e-be53-4ab56f062815
+langcode: en
+status: true
+dependencies: {  }
+name: movie_large_2560x800_
+label: 'Movie Large (2560x800)'
+effects:
+  44874372-fd3a-4431-8c0a-abbf0a77b783:
+    uuid: 44874372-fd3a-4431-8c0a-abbf0a77b783
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2560
+      height: 800
+      anchor: center-center

@@ -32,4 +32,9 @@ function custom_theme_preprocess_block(&$variables) {
   if ($variables['elements']['#plugin_id'] === 'views_block:movies-block_1') {
     $variables['#attached']['library'][] = 'custom_theme/movie-grid';
   }
+
+  // Check if the block id is of required block or not.
+  if ($variables['elements']['#plugin_id'] === 'views_block:movies-block_2') {
+    $variables['#attached']['library'][] = 'custom_theme/slider-block';
+  }
 }

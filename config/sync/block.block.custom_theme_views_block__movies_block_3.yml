@@ -1,6 +1,6 @@
-uuid: 476a0bc2-1126-4fef-b9a0-1a97b0ea6517
+uuid: bdc5faf3-ef30-4f59-9c8b-00702f882ce8
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.movies
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - custom_theme
-id: custom_theme_views_block__movies_block_1
+id: custom_theme_views_block__movies_block_3
 theme: custom_theme
 region: content
 weight: 0
 provider: null
-plugin: 'views_block:movies-block_1'
+plugin: 'views_block:movies-block_3'
 settings:
-  id: 'views_block:movies-block_1'
+  id: 'views_block:movies-block_3'
   label: ''
   label_display: '0'
   provider: views

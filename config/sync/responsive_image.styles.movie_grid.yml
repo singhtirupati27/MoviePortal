@@ -1,0 +1,70 @@
+uuid: 18d89eae-b506-42a3-9626-672c74f12c47
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.grid_lg_180x150_
+    - image.style.grid_md_300x175_
+    - image.style.grid_sm_270x150
+    - image.style.grid_tab_240x150_
+    - image.style.grid_tab_350x150_
+    - image.style.grid_xl_500x150_
+    - image.style.grid_xxl_700x150_
+  theme:
+    - custom_theme
+id: movie_grid
+label: 'Movie Grid'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - grid_xl_500x150_
+        - grid_xxl_700x150_
+    breakpoint_id: custom_theme.screen.laptop-xl
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - grid_xl_500x150_
+        - grid_xxl_700x150_
+    breakpoint_id: custom_theme.screen.laptop-lg
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - grid_xl_500x150_
+        - grid_xxl_700x150_
+    breakpoint_id: custom_theme.screen.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - grid_tab_240x150_
+        - grid_tab_350x150_
+    breakpoint_id: custom_theme.screen.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: grid_lg_180x150_
+    breakpoint_id: custom_theme.screen.mobile-lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: grid_md_300x175_
+    breakpoint_id: custom_theme.screen.mobile-md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: grid_sm_270x150
+    breakpoint_id: custom_theme.screen.mobile-sm
+    multiplier: 1x
+breakpoint_group: custom_theme.screen
+fallback_image_style: grid_xxl_700x150_

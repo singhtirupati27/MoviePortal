@@ -1,11 +1,11 @@
 @use '../partial_files/importers' as *;
 
-.block-views-blockmovies-block-1 {
-  .movie-list.view-display-id-block_1 {
+.block-views-blockmovies-block-3 {
+  .movie-list.view-display-id-block_3 {
     .view-content {
       display: flex;
       flex-wrap: wrap;
-      background-color: var(--bg-light-color);
+      background-color: var(--bg-accent-color);
       @include padding(15px, 20px);
 
       .movie-grid {
@@ -81,9 +81,12 @@
               margin: 5px;
 
               &__image {
+                overflow: hidden;
+
                 img {
-                  width: 100%;
-                  height: 250px;
+                  max-width: none;
+                  width: auto;
+                  height: 100%;
                 }
               }
 
@@ -91,14 +94,27 @@
                 position: absolute;
                 bottom: 20px;
                 left: 20px;
+                right: 20px;
+                @include margin-center;
                 opacity: 0.9;
-                @include font-size(18px);
-                font-family: $medium-font, sans-serif;
-                letter-spacing: 2px;
-                text-transform: uppercase;
 
-                @include media($large-screen) {
-                  @include font-size(28px);
+                a {
+                  @include font-size(15px);
+                  font-family: $medium-font, sans-serif;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+
+                  @include media($large-screen) {
+                    @include font-size(28px);
+                  }
+
+                  @include media($laptop-l-screen) {
+                    @include font-size(20px);
+                  }
+
+                  @include media($laptop-screen) {
+                    @include font-size(17px);
+                  }
                 }
 
                 @include media($mobile-l-screen) {
@@ -223,141 +239,138 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
 
+      .movie-popup {
+        &-content {
+          @include absolute-center(50%, 50%, -50%, -50%);
+          @include margin-center;
+          min-width: 950px;
+
+          @include media($large-screen) {
+            min-width: 1180px;
+          }
+
+          @include media($laptop-screen) {
+            min-width: 940px;
+          }
+
+          @include media($tablet-screen) {
+            min-width: 500px;
+            flex-direction: column;
+          }
+
+          @include media($mobile-l-screen) {
+            min-width: 300px;
+            flex-direction: column;
+          }
+
+          @include media($mobile-m-screen) {
+            min-width: 250px;
+            flex-direction: column;
+          }
+
+          @include media($mobile-s-screen) {
+            min-width: 230px;
+            flex-direction: column;
+          }
+
+          &__button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 1;
+          }
+
+          &-left {
+            width: 60%;
+
+            @include media($tablet-screen) {
+              width: 100%;
             }
 
-            .movie-popup.modal {
-              .movie-popup-content.modal-dialog {
-                min-width: 950px;
+            @include media($mobile-l-screen) {
+              width: 100%;
+            }
 
-                @include media($large-screen) {
-                  min-width: 1180px;
-                }
+            @include media($mobile-m-screen) {
+              width: 100%;
+            }
 
-                @include media($tablet-screen) {
-                  min-width: 500px;
-                }
+            @include media($mobile-s-screen) {
+              width: 100%;
+            }
 
-                @include media($mobile-l-screen) {
-                  min-width: 300px;
-                }
+            &__image {
+              overflow: hidden;
 
-                @include media($mobile-m-screen) {
-                  min-width: 250px;
-                }
+              img {
+                object-fit: cover;
+                filter: brightness(0.6);
+              }
+            }
+          }
 
-                @include media($mobile-s-screen) {
-                  min-width: 230px;
-                }
+          &-right {
+            width: 40%;
+            background-color: var(--bg-accent-color);
+            padding: 10px;
 
-                .movie-popup-content-item {
-                  display: flex;
-                  flex-direction: row;
+            @include media($large-screen) {
+              @include font-size(16px);
+            }
 
-                  @include media($tablet-screen) {
-                    flex-direction: column;
-                  }
+            @include media($mobile-l-screen) {
+              width: 100%;
+            }
 
-                  @include media($mobile-l-screen) {
-                    flex-direction: column;
-                  }
+            @include media($tablet-screen) {
+              width: 100%;
+            }
 
-                  @include media($mobile-m-screen) {
-                    flex-direction: column;
-                  }
+            @include media($mobile-m-screen) {
+              width: 100%;
+            }
 
-                  @include media($mobile-s-screen) {
-                    flex-direction: column;
-                  }
+            @include media($mobile-s-screen) {
+              width: 100%;
+            }
 
-                  &__button {
-                    position: absolute;
-                    top: 5px;
-                    right: 5px;
-                    z-index: 1;
-                  }
+            &__title {
+              h2 {
+                color: var(--brand-secondary-color);
+                padding-right: 23px;
+                @include font-size(20px);
+                letter-spacing: 2px;
+                text-transform: uppercase;
+              }
+            }
 
-                  &-left {
-                    width: 60%;
+            &__date {
+              p {
+                color: var(--brand-secondary-color);
+                font-family: $paragraph-font, sans-serif;
+              }
+            }
 
-                    @include media($tablet-screen) {
-                      width: 100%;
-                    }
+            &__description {
+              padding-top: 20px;
 
-                    @include media($mobile-l-screen) {
-                      width: 100%;
-                    }
+              p {
+                color: var(--brand-secondary-color);
+                font-family: $paragraph-font, sans-serif;
+                opacity: 0.7;
+              }
+            }
 
-                    @include media($mobile-m-screen) {
-                      width: 100%;
-                    }
-
-                    @include media($mobile-s-screen) {
-                      width: 100%;
-                    }
-
-                    &__image {
-                      img {
-                        width: 100%;
-                        filter: brightness(0.6);
-                      }
-                    }
-                  }
-
-                  &-right {
-                    width: 40%;
-                    background-color: var(--bg-accent-color);
-                    padding: 10px;
-                    opacity: 0.87;
-
-                    @include media($large-screen) {
-                      @include padding(20px, 20px);
-                      @include font-size(20px);
-                    }
-
-                    @include media($mobile-l-screen) {
-                      width: 100%;
-                    }
-
-                    @include media($tablet-screen) {
-                      width: 100%;
-                    }
-
-                    @include media($mobile-m-screen) {
-                      width: 100%;
-                    }
-
-                    @include media($mobile-s-screen) {
-                      width: 100%;
-                    }
-
-                    &__title {
-                      padding-right: 23px;
-                      letter-spacing: 2px;
-                      text-transform: uppercase;
-                    }
-
-                    &__date {
-                      color: var(--brand-secondary-color);
-                      font-family: $paragraph-font, sans-serif;
-                    }
-
-                    &__description {
-                      padding-top: 20px;
-                      color: var(--brand-secondary-color);
-                      font-family: $paragraph-font, sans-serif;
-                      opacity: 0.7;
-                    }
-
-                    &__link {
-                      a {
-                        display: inline-block;
-                        @include padding(8px, 20px);
-                        border: 2px solid var(--brand-secondary-color);
-                      }
-                    }
-                  }
-                }
+            &__link {
+              a {
+                display: inline-block;
+                @include padding(8px, 20px);
+                border: 2px solid var(--brand-secondary-color);
               }
             }
           }

@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{{ attach_library('custom_theme/movie-grid') }}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
+
+<div class="movie-popup modal fade" id="movie-popup">
+  <div class="movie-popup-content d-flex modal-dialog">
+    <i type="button" class="btn-close btn-close-white movie-popup-content__button" id="popup-close"  data-bs-toggle="modal"></i>
+    <div class="movie-popup-content-left">
+      <div class="movie-popup-content-left__image" id="movie-image">
+        <img src="" alt="">
+      </div>
+    </div>
+    <div class="movie-popup-content-right">
+      <div class="movie-popup-content-right__title" id="movie-title">
+        <h2></h2>
+      </div>
+      <div class="movie-popup-content-right__date" id="movie-date">
+        <p></p>
+      </div>
+      <div class="movie-popup-content-right__description" id="movie-description">
+        <p></p>
+      </div>
+      <div class="movie-popup-content-right__link" id="movie-link">
+        <a href="">Movie Info</a>
+      </div>
+    </div>
+  </div>
+</div>

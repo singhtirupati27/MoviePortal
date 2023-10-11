@@ -1,0 +1,15 @@
+uuid: ff0d4943-e84c-4ba3-9f75-6a9e1918e724
+langcode: en
+status: true
+dependencies: {  }
+name: grid_tab_350x150_
+label: 'Grid tab (350x150)'
+effects:
+  12e29c53-63cb-4413-bff7-f64c090f4672:
+    uuid: 12e29c53-63cb-4413-bff7-f64c090f4672
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 300
+      anchor: center-center

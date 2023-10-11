@@ -1,0 +1,15 @@
+uuid: 98a2f445-61f9-4673-9a2c-5b0480ec5939
+langcode: en
+status: true
+dependencies: {  }
+name: movie_md_330x210_
+label: 'Movie md (330x210)'
+effects:
+  c5991cc3-3556-4a53-bd14-3c5c6b3b87c5:
+    uuid: c5991cc3-3556-4a53-bd14-3c5c6b3b87c5
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 330
+      height: 210
+      anchor: center-center

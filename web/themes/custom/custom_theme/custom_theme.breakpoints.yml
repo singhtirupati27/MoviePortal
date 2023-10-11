@@ -1,0 +1,55 @@
+custom_theme.screen.mobile-sm:
+  label: mobile-sm
+  mediaQuery: '(max-width: 320px)'
+  weight: 1
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.mobile-md:
+  label: mobile-md
+  mediaQuery: '(max-width: 375px)'
+  weight: 2
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.mobile-lg:
+  label: mobile-lg
+  mediaQuery: '(max-width: 425px)'
+  weight: 3
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.tablet:
+  label: tablet
+  mediaQuery: '(max-width: 768px)'
+  weight: 4
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.laptop:
+  label: laptop
+  mediaQuery: '(max-width: 1024px)'
+  weight: 5
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.laptop-lg:
+  label: laptop-lg
+  mediaQuery: '(max-width: 1440px)'
+  weight: 6
+  group: custom_theme.screen
+  multipliers:
+    - 1x
+
+custom_theme.screen.laptop-xl:
+  label: laptop-xl
+  mediaQuery: '(max-width: 2560px)'
+  weight: 7
+  group: custom_theme.screen
+  multipliers:
+    - 1x

@@ -6,11 +6,11 @@ dependencies:
     - field.field.node.movie.field_description
     - field.field.node.movie.field_movie_image
     - field.field.node.movie.field_release_date
-    - image.style.movie_banner_1440x640_
     - node.type.movie
+    - responsive_image.styles.movie_style
   module:
     - datetime
-    - image
+    - responsive_image
     - text
     - user
 id: node.movie.default
@@ -26,11 +26,11 @@ content:
     weight: 2
     region: content
   field_movie_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: movie_style
       image_link: ''
-      image_style: movie_banner_1440x640_
       image_loading:
         attribute: lazy
     third_party_settings: {  }

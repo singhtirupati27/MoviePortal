@@ -1,0 +1,15 @@
+uuid: 7d6df8f8-67fc-4791-91fd-d01d7c866755
+langcode: en
+status: true
+dependencies: {  }
+name: grid_lg_180x150_
+label: 'Grid lg (180x150)'
+effects:
+  5f8545e9-3f21-4aee-b461-6a5c0fcc0933:
+    uuid: 5f8545e9-3f21-4aee-b461-6a5c0fcc0933
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 150
+      anchor: center-center

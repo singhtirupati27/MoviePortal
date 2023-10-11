@@ -1,0 +1,32 @@
+@use '../partial_files/importers' as *;
+
+header {
+  nav.navbar {
+    @include padding(8px, 60px);
+    background-color: var(--bg-accent-color) !important;
+
+    .container-fluid {
+      .region.region-nav-branding {
+        a {
+          color: var(--brand-primary);
+        }
+      }
+
+      .navbar-collapse {
+        a {
+          color: var(--brand-primary);
+        }
+
+        .region.region-nav-additional {
+          .navigation.contextual-region {
+            display: inline-block;
+          }
+
+          .search-block-form.contextual-region {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

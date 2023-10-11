@@ -1,0 +1,15 @@
+uuid: b9b2732f-381a-497d-8866-138ff334fd20
+langcode: en
+status: true
+dependencies: {  }
+name: grid_xxl_700x150_
+label: 'Grid xxl (700x150)'
+effects:
+  119ca8cc-c17e-45b7-8b53-7f42988132d7:
+    uuid: 119ca8cc-c17e-45b7-8b53-7f42988132d7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1300
+      height: 300
+      anchor: center-center
