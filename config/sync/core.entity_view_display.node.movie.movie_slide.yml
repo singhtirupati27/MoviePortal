@@ -1,0 +1,47 @@
+uuid: 52b1221c-7e50-46e7-93c3-104d3c7ac91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.movie_slide
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_movie_image
+    - field.field.node.movie.field_release_date
+    - node.type.movie
+    - responsive_image.styles.movie_style
+  module:
+    - datetime
+    - responsive_image
+    - user
+id: node.movie.movie_slide
+targetEntityType: node
+bundle: movie
+mode: movie_slide
+content:
+  field_movie_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: movie_style
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description: true

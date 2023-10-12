@@ -1,0 +1,10 @@
+uuid: b973ccf3-2c6e-4021-b452-c4fb604023f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.movie_slide
+label: 'Movie Slider'
+targetEntityType: node
+cache: true
