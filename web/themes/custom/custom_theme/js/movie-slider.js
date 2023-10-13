@@ -6,9 +6,9 @@
 (function ($, Drupal, once) {
   Drupal.behaviors.sliderBehavior = {
     attach: function (context, settings) {
-      const $sliderDiv = $('.movie-slider .view-content');
-      once('movieSlider', $sliderDiv, context).forEach(function (element) {
-        $($sliderDiv).slick({
+      const sliderDiv = $('.movie-slider .view-content');
+      once('movieSlider', sliderDiv, context).forEach(function (element) {
+        $(context).find('.movie-slider .view-content').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
