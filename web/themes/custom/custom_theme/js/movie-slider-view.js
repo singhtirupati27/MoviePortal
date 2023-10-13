@@ -8,7 +8,7 @@
     attach: function (context, settings) {
       const sliderDiv = $('.slider-movie .view-content');
       once('sliderMovie', sliderDiv, context).forEach(function (element) {
-        $(sliderDiv).slick({
+        $(context).find('.slider-movie .view-content').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: false,
