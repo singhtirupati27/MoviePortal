@@ -28,3 +28,21 @@ movie-page:
   css:
     theme:
       css/movie-page.css: {}
+
+movie-grid:
+  version: 1.x
+  css:
+    theme:
+      css/movie-grid.css: {}
+  js:
+    js/movie-grid.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/jquery
+
+slider-block:
+  version: 1.x
+  css:
+    theme:
+      css/slider.css: {}

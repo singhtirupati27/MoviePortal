@@ -7,11 +7,8 @@
 /**
  * Implements hook_preprocess_HOOK().
  */
-function custom_theme_preprocess_views_view(&$variables) {
-  // Check if the view id is of required type or not.
-  if($variables['id'] === 'movies' && $variables['display_id'] === 'page_1') {
-    $variables['#attached']['library'][] = 'custom_theme/movie-slider';
-  }
+function custom_theme_preprocess_views_view__movies__page_1(&$variables) {
+  $variables['#attached']['library'][] = 'custom_theme/movie-slider';
 }
 
 /**
@@ -19,7 +16,21 @@ function custom_theme_preprocess_views_view(&$variables) {
  */
 function custom_theme_preprocess_node(&$variables) {
   // Check whether node id of movie content type or not.
-  if($variables['node']->getType() === 'movie') {
+  if ($variables['node']->getType() === 'movie') {
     $variables['#attached']['library'][] = 'custom_theme/movie-page';
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_theme_preprocess_views_view__movies__block_3(&$variables) {
+  $variables['#attached']['library'][] = 'custom_theme/movie-grid';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_theme_preprocess_views_view__movies__block_2(&$variables) {
+  $variables['#attached']['library'][] = 'custom_theme/slider-block';
 }

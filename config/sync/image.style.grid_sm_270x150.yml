@@ -1,0 +1,15 @@
+uuid: a8cd93c4-b792-4589-9a69-189b53895e3b
+langcode: en
+status: true
+dependencies: {  }
+name: grid_sm_270x150
+label: 'Grid sm (270x150)'
+effects:
+  bdac94be-eaae-413f-96e6-f74b88ee2824:
+    uuid: bdac94be-eaae-413f-96e6-f74b88ee2824
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 150
+      anchor: center-center

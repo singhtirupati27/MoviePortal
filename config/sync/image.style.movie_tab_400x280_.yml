@@ -1,0 +1,15 @@
+uuid: f6e6a691-64fc-40c9-badd-93f558719878
+langcode: en
+status: true
+dependencies: {  }
+name: movie_tab_400x280_
+label: 'Movie tab (400x280)'
+effects:
+  8ee4ed6c-4e7c-4f13-b6c8-b959dc9a05a3:
+    uuid: 8ee4ed6c-4e7c-4f13-b6c8-b959dc9a05a3
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 400
+      height: 280
+      anchor: center-center

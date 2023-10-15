@@ -1,0 +1,15 @@
+uuid: b7bae2f8-4e59-4518-9fd6-d64d4480d1ee
+langcode: en
+status: true
+dependencies: {  }
+name: movie_sm_300x200_
+label: 'Movie sm (300x200)'
+effects:
+  5e3c75ff-8980-499b-8ff9-faf7aeda3d9e:
+    uuid: 5e3c75ff-8980-499b-8ff9-faf7aeda3d9e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

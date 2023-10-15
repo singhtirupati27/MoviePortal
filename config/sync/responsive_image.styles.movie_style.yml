@@ -1,0 +1,54 @@
+uuid: c784ccfe-1f4c-411f-a52f-9f0006524a99
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1300x1300
+    - image.style.max_650x650
+    - image.style.movie_banner_1440x640_
+    - image.style.movie_large_2560x800_
+    - image.style.movie_lg_350x240_
+    - image.style.movie_md_330x210_
+    - image.style.movie_sm_300x200_
+  theme:
+    - custom_theme
+id: movie_style
+label: 'Movie Style'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_large_2560x800_
+    breakpoint_id: custom_theme.screen.laptop-xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_banner_1440x640_
+    breakpoint_id: custom_theme.screen.laptop-lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
+    breakpoint_id: custom_theme.screen.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+    breakpoint_id: custom_theme.screen.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_lg_350x240_
+    breakpoint_id: custom_theme.screen.mobile-lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_md_330x210_
+    breakpoint_id: custom_theme.screen.mobile-md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: movie_sm_300x200_
+    breakpoint_id: custom_theme.screen.mobile-sm
+    multiplier: 1x
+breakpoint_group: custom_theme.screen
+fallback_image_style: movie_large_2560x800_

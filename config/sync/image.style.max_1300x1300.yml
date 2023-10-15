@@ -1,0 +1,20 @@
+uuid: 7a4c9cc8-bd05-4ca0-adf5-372fe98f0df9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: TD595kkS8PAS0v5TKF6ylAqyG4uSO1y52SQqy7zdTIw
+name: max_1300x1300
+label: 'Max 1300x1300'
+effects:
+  6cfdea81-dce0-4dd7-98d6-41deda021863:
+    uuid: 6cfdea81-dce0-4dd7-98d6-41deda021863
+    id: image_scale
+    weight: 2
+    data:
+      width: 1300
+      height: 1300
+      upscale: false

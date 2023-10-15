@@ -1,0 +1,228 @@
+@use '../partial_files/importers' as *;
+
+.block-views.block-views-blockmovies-block-2 {
+  .movie-slider.view-display-id-block_2 {
+    .view-content.slick-slider {
+      position: relative;
+      margin-bottom: 0;
+
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        color: var(--brand-secondary-color);
+        display: inline-block;
+        @include font-size(38px);
+      }
+
+      .slick-arrow.arrow-left {
+        left: 0;
+        transform: translate(50%, -50%);
+        z-index: 1;
+
+        @include media($mobile-l-screen) {
+          @include font-size(24px);
+        }
+
+        @include media($mobile-m-screen) {
+          @include font-size(21px);
+        }
+
+        @include media($mobile-s-screen) {
+          @include font-size(18px);
+        }
+      }
+
+      .slick-arrow.arrow-right {
+        right: 0;
+        transform: translate(-50%, -50%);
+
+        @include media($mobile-l-screen) {
+          @include font-size(24px);
+        }
+
+        @include media($mobile-m-screen) {
+          @include font-size(21px);
+        }
+
+        @include media($mobile-s-screen) {
+          @include font-size(18px);
+        }
+      }
+
+      .slick-list {
+        .slick-track {
+          .movie-grid.views-row {
+            position: relative;
+
+            .views-field.views-field-nothing {
+              .field-content {
+                .movie-slider-content {
+                  &__image {
+                    img {
+                      width: 100%;
+                      filter: brightness(0.6);
+                    }
+                  }
+
+                  &-item {
+                    @include absolute-center(50%, 50%, -50%, -50%);
+                    bottom: 0;
+                    right: 0;
+                    @include margin-center;
+                    text-align: center;
+
+                    &__date {
+                      time {
+                        display: inline-block;
+                        color: var(--brand-secondary-color);
+                        @include font-size(20px);
+                        opacity: 0.8;
+
+                        @include media($large-screen) {
+                          @include font-size(30px);
+                        }
+
+                        @include media($laptop-l-screen) {
+                          @include font-size(23px);
+                        }
+
+                        @include media($laptop-screen) {
+                          @include font-size(20px);
+                        }
+
+                        @include media($tablet-screen) {
+                          @include font-size(16px);
+                        }
+
+                        @include media($mobile-l-screen) {
+                          @include font-size(10px);
+                        }
+
+                        @include media($mobile-m-screen) {
+                          @include font-size(8px);
+                        }
+
+                        @include media($mobile-s-screen) {
+                          @include font-size(8px);
+                        }
+                      }
+                    }
+
+                    &__title {
+                      a {
+                        @include font-size(55px);
+                        display: inline-block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+
+                        @include media($large-screen) {
+                          @include font-size(48px);
+                        }
+
+                        @include media($laptop-l-screen) {
+                          @include font-size(38px);
+                        }
+
+                        @include media($laptop-screen) {
+                          @include font-size(30px);
+                        }
+
+                        @include media($tablet-screen) {
+                          @include font-size(28px);
+                        }
+
+                        @include media($mobile-l-screen) {
+                          @include font-size(21px);
+                        }
+
+                        @include media($mobile-m-screen) {
+                          @include font-size(20px);
+                        }
+
+                        @include media($mobile-s-screen) {
+                          @include font-size(18px);
+                        }
+                      }
+                    }
+
+                    &__link {
+                      @include padding(12px, 0);
+
+                      a {
+                        display: inline-block;
+                        border: 1px solid var(--brand-secondary-color);
+                        @include padding(10px, 15px);
+                        @include font-size(16px);
+                        font-family: $title-font, sans-serif;
+                        text-transform: uppercase;
+                        letter-spacing: 2.3px;
+
+                        &:hover {
+                          background-color: var(--brand-primary);
+                          color: var(--brand-secondary-color);
+                          border-color: var(--brand-primary);
+                        }
+
+                        @include media($large-screen) {
+                          @include font-size(18px);
+                        }
+
+                        @include media($tablet-screen) {
+                          letter-spacing: 1.5px;
+                          @include font-size(13px);
+                          @include padding(5px, 10px);
+                        }
+
+                        @include media($mobile-l-screen) {
+                          letter-spacing: 1.5px;
+                          @include font-size(9px);
+                          @include padding(3px, 6px);
+                        }
+
+                        @include media($mobile-m-screen) {
+                          letter-spacing: 1.5px;
+                          @include font-size(8px);
+                          @include padding(3px, 6px);
+                        }
+
+                        @include media($mobile-s-screen) {
+                          letter-spacing: 1.5px;
+                          @include font-size(8px);
+                          @include padding(3px, 6px);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        bottom: 0;
+
+        li {
+          button {
+            &::before {
+              content: '';
+              width: 20px;
+              height: 5px;
+              background-color: var(--brand-secondary-color);
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .slick-active {
+          button {
+            &::before {
+              background-color: var(--brand-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

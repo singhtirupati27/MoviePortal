@@ -1,0 +1,29 @@
+uuid: 3c0beda5-461c-4204-bfef-8d479ea99286
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.movies
+  module:
+    - system
+    - views
+  theme:
+    - custom_theme
+id: custom_theme_views_block__movies_block_2
+theme: custom_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:movies-block_2'
+settings:
+  id: 'views_block:movies-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /movies

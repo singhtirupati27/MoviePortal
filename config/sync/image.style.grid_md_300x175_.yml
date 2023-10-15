@@ -1,0 +1,15 @@
+uuid: 054a6e12-a6da-443f-8f33-264bcf0cadef
+langcode: en
+status: true
+dependencies: {  }
+name: grid_md_300x175_
+label: 'Grid md (300x175)'
+effects:
+  6e40d658-0aa9-4016-b737-ff7aa9ad6bbd:
+    uuid: 6e40d658-0aa9-4016-b737-ff7aa9ad6bbd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 175
+      anchor: center-center

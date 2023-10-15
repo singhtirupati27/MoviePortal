@@ -1,0 +1,15 @@
+uuid: f6c52296-fb89-4ee3-b076-1375ff1a955a
+langcode: en
+status: true
+dependencies: {  }
+name: grid_tab_240x150_
+label: 'Grid tab (240x150)'
+effects:
+  a00258bf-bebc-4742-9465-286e2b82190d:
+    uuid: a00258bf-bebc-4742-9465-286e2b82190d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 150
+      anchor: center-center

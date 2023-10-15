@@ -12,3 +12,19 @@
 @mixin margin-center {
   margin: 0 auto;
 }
+
+@mixin position-absolute($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
